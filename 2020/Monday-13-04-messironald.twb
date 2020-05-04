@@ -1,0 +1,2124 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='all'>
+      <format attr='color' value='#ffffff' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Select competition' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;La Liga&quot;'>
+        <calculation class='tableau' formula='&quot;La Liga&quot;' />
+        <members>
+          <member value='&quot;Champions League&quot;' />
+          <member value='&quot;La Liga&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (MessiRonaldo)' inline='true' name='federated.1d8wrpp08annwb15f4r3a0wwuv30' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MessiRonaldo' name='excel-direct.1fmv5de18f2cw912fxlbf1ei9jkq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Sampayo/Desktop/MessiRonaldo.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1fmv5de18f2cw912fxlbf1ei9jkq' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:J19:no:A1:J19:0' header='yes' outcome='6'>
+            <column datatype='string' name='Season' ordinal='0' />
+            <column datatype='string' name='Player' ordinal='1' />
+            <column datatype='integer' name='Liga_Goals' ordinal='2' />
+            <column datatype='integer' name='Liga_Asts' ordinal='3' />
+            <column datatype='integer' name='Liga_Aps' ordinal='4' />
+            <column datatype='integer' name='Liga_Mins' ordinal='5' />
+            <column datatype='integer' name='CL_Goals' ordinal='6' />
+            <column datatype='integer' name='CL_Asts' ordinal='7' />
+            <column datatype='integer' name='CL_Aps' ordinal='8' />
+            <column datatype='integer' name='CL_Mins' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Player</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Goals]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Goals</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Asts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Asts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Asts</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Aps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Aps]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Aps</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Mins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Mins]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Mins</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Goals]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Goals</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Asts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Asts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Asts</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Aps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Aps]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Aps</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Mins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Mins]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Mins</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J19:no:A1:J19:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CL Aps' datatype='integer' name='[CL_Aps]' role='measure' type='quantitative' />
+      <column caption='CL Asts' datatype='integer' name='[CL_Asts]' role='measure' type='quantitative' />
+      <column caption='CL Goals' datatype='integer' name='[CL_Goals]' role='measure' type='quantitative' />
+      <column caption='CL Mins' datatype='integer' name='[CL_Mins]' role='measure' type='quantitative' />
+      <column caption='TotalGoalsCL' datatype='integer' name='[Calculation_1146166145009807360]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([CL_Goals])' />
+      </column>
+      <column caption='TotalAssistsCL' datatype='integer' name='[Calculation_1146166145009930241]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([CL_Asts])' />
+      </column>
+      <column caption='TotalGoalsLL' datatype='integer' name='[Calculation_1146166145010008066]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Liga_Goals])' />
+      </column>
+      <column caption='TotalAssistsLL' datatype='integer' name='[Calculation_1146166145010110467]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Liga_Asts])' />
+      </column>
+      <column caption='Display Sheet' datatype='string' name='[Calculation_313281688901804032]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parámetro 1]' />
+      </column>
+      <column caption='Liga Aps' datatype='integer' name='[Liga_Aps]' role='measure' type='quantitative' />
+      <column caption='Liga Asts' datatype='integer' name='[Liga_Asts]' role='measure' type='quantitative' />
+      <column caption='Liga Goals' datatype='integer' name='[Liga_Goals]' role='measure' type='quantitative' />
+      <column caption='Liga Mins' datatype='integer' name='[Liga_Mins]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+      <column-instance column='[Liga_Goals]' derivation='Attribute' name='[attr:Liga_Goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Goals]' derivation='None' name='[none:CL_Goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Mins]' derivation='None' name='[none:CL_Mins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Goals]' derivation='None' name='[none:Liga_Goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+      <column-instance column='[CL_Aps]' derivation='Sum' name='[sum:CL_Aps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Asts]' derivation='Sum' name='[sum:CL_Asts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Goals]' derivation='Sum' name='[sum:CL_Goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Mins]' derivation='Sum' name='[sum:CL_Mins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Aps]' derivation='Sum' name='[sum:Liga_Aps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Asts]' derivation='Sum' name='[sum:Liga_Asts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Goals]' derivation='Sum' name='[sum:Liga_Goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Mins]' derivation='Sum' name='[sum:Liga_Mins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.30855' measure-ordering='alphabetic' measure-percentage='0.460967' parameter-percentage='0.230483' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='green_gold_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:CL_Goals:qk]&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:CL_Mins:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Mins:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Mins:qk]&quot;</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Aps:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[usr:Calculation_462181951526596614:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[usr:Calculation_462181951526158341:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[usr:Calculation_462181951526928392:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Asts:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[usr:Calculation_462181951526756359:qk]&quot;</bucket>
+            </map>
+            <map to='#f05c4d'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[attr:Liga_Goals:qk]&quot;</bucket>
+            </map>
+            <map to='#f05c4d'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Liga_Goals:qk]&quot;</bucket>
+            </map>
+            <map to='#f05c4d'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]&quot;</bucket>
+            </map>
+            <map to='#fa8f79'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Aps:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30]&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Asts:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Player:nk]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Messi&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Ronaldo&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select competition' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;La Liga&quot;'>
+          <calculation class='tableau' formula='&quot;La Liga&quot;' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Champions League'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='36'>     &lt;</run>
+            <run bold='true' fontcolor='#2a5783' fontsize='36'>MESSI</run>
+            <run fontsize='36'>Æ </run>
+            <run fontcolor='#898989' fontsize='36'>VS</run>
+            <run bold='true' fontsize='36'>Æ </run>
+            <run bold='true' fontcolor='#76b7b2' fontsize='36'>RONALDO</run>
+            <run fontsize='36'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MessiRonaldo)' name='federated.1d8wrpp08annwb15f4r3a0wwuv30' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select competition' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;La Liga&quot;'>
+              <calculation class='tableau' formula='&quot;La Liga&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1d8wrpp08annwb15f4r3a0wwuv30'>
+            <column caption='CL Goals' datatype='integer' name='[CL_Goals]' role='measure' type='quantitative' />
+            <column caption='Display Sheet' datatype='string' name='[Calculation_313281688901804032]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parámetro 1]' />
+            </column>
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_313281688901804032]' derivation='None' name='[none:Calculation_313281688901804032:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CL_Goals]' derivation='Sum' name='[sum:CL_Goals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]'>
+            <groupfilter function='member' level='[none:Calculation_313281688901804032:nk]' member='&quot;Champions League&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]'>
+            <groupfilter function='level-members' level='[none:Season:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]</column>
+            <column>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]' scope='cols' value='false' />
+            <format attr='title' class='0' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]' scope='cols' value='Goals' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='48' />
+            <format attr='cell-w' value='140' />
+            <format attr='cell-h' value='60' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]' value='bold' />
+            <format attr='font-size' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]' value='14' />
+            <format attr='font-size' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='14' />
+            <format attr='color' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]' value='#898989' />
+            <format attr='color' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='#898989' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-level' scope='cols' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#666666' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#666666' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]' value='Display Sheet' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='550' />
+                <format attr='maxwidth' value='550' />
+                <format attr='minheight' value='540' />
+                <format attr='maxheight' value='540' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+              <path column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='673' />
+                <format attr='maxwidth' value='673' />
+                <format attr='minheight' value='360' />
+                <format attr='maxheight' value='360' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+              <lod column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='673' />
+                <format attr='maxwidth' value='673' />
+                <format attr='minheight' value='360' />
+                <format attr='maxheight' value='360' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]</rows>
+        <cols>([federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk] + [federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:CL_Goals:qk])</cols>
+      </table>
+      <simple-id uuid='{00BA907F-A302-44FD-851F-BC5EA83770CE}' />
+    </worksheet>
+    <worksheet name='La Liga'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='36'>     &lt;</run>
+            <run bold='true' fontcolor='#2a5783' fontsize='36'>MESSI</run>
+            <run fontsize='36'>Æ </run>
+            <run fontcolor='#898989' fontsize='36'>VS</run>
+            <run bold='true' fontsize='36'>Æ </run>
+            <run bold='true' fontcolor='#76b7b2' fontsize='36'>RONALDO</run>
+            <run fontsize='36'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MessiRonaldo)' name='federated.1d8wrpp08annwb15f4r3a0wwuv30' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select competition' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;La Liga&quot;'>
+              <calculation class='tableau' formula='&quot;La Liga&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1d8wrpp08annwb15f4r3a0wwuv30'>
+            <column caption='Display Sheet' datatype='string' name='[Calculation_313281688901804032]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parámetro 1]' />
+            </column>
+            <column caption='Liga Goals' datatype='integer' name='[Liga_Goals]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_313281688901804032]' derivation='None' name='[none:Calculation_313281688901804032:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Liga_Goals]' derivation='Sum' name='[sum:Liga_Goals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]'>
+            <groupfilter function='member' level='[none:Calculation_313281688901804032:nk]' member='&quot;La Liga&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]'>
+            <groupfilter function='level-members' level='[none:Season:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]</column>
+            <column>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' scope='cols' value='false' />
+            <encoding attr='space' class='0' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' field-type='quantitative' major-origin='0' major-spacing='5' min='20' range-type='fixedminuniformmax' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' scope='cols' value='Goals' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='50' />
+            <format attr='cell-w' value='140' />
+            <format attr='cell-h' value='80' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='bold' />
+            <format attr='text-format' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' value='' />
+            <format attr='font-weight' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' value='bold' />
+            <format attr='font-size' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='14' />
+            <format attr='font-size' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' value='14' />
+            <format attr='color' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]' value='#898989' />
+            <format attr='color' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' value='#898989' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='band-level' scope='cols' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#666666' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#666666' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' value='Player'>
+              <formatted-text>
+                <run fontcolor='#555555'>Player</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='512' />
+                <format attr='maxwidth' value='512' />
+                <format attr='minheight' value='720' />
+                <format attr='maxheight' value='720' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+              <path column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+              <lod column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]</rows>
+        <cols>([federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk] + [federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk])</cols>
+      </table>
+      <simple-id uuid='{583B05A5-2180-4941-8253-83B839A4855B}' />
+    </worksheet>
+    <worksheet name='TotalLL'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#666666'>Total Goals</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MessiRonaldo)' name='federated.1d8wrpp08annwb15f4r3a0wwuv30' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d8wrpp08annwb15f4r3a0wwuv30'>
+            <column caption='TotalGoalsLL' datatype='integer' name='[Calculation_1146166145010008066]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Liga_Goals])' />
+            </column>
+            <column caption='Liga Goals' datatype='integer' name='[Liga_Goals]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1146166145010008066]' derivation='User' name='[usr:Calculation_1146166145010008066:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' value='#666666' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[usr:Calculation_1146166145010008066:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-size' value='16' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+              <text column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[usr:Calculation_1146166145010008066:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1BD761C9-7E35-49CF-8BFE-040DBCB46133}' />
+    </worksheet>
+    <worksheet name='TotalLL (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#666666'>Total Assists</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MessiRonaldo)' name='federated.1d8wrpp08annwb15f4r3a0wwuv30' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d8wrpp08annwb15f4r3a0wwuv30'>
+            <column caption='TotalAssistsLL' datatype='integer' name='[Calculation_1146166145010110467]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Liga_Asts])' />
+            </column>
+            <column caption='Liga Asts' datatype='integer' name='[Liga_Asts]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1146166145010110467]' derivation='User' name='[usr:Calculation_1146166145010110467:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' value='#666666' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-size' value='16' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' />
+              <text column='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[usr:Calculation_1146166145010110467:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8E71B785-7B40-40D3-91F6-58DDBDAC80A8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='color' value='#000000' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Parámetros' name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select competition' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;La Liga&quot;'>
+          <calculation class='tableau' formula='&quot;La Liga&quot;' />
+          <members>
+            <member value='&quot;Champions League&quot;' />
+            <member value='&quot;La Liga&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='90000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='9000'>
+            <zone h='90000' id='10' param='vert' type='layout-flow' w='59200' x='800' y='9000'>
+              <zone h='1125' id='7' name='Champions League' show-title='false' w='59200' x='800' y='9000'>
+                <layout-cache fixed-size-h='1' has-max-size-w='true' maxwidth='1' minwidth='1' type-h='fixed' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='462' h='58750' id='11' is-fixed='true' name='La Liga' show-title='false' w='59200' x='800' y='10125'>
+                <layout-cache has-max-size-w='true' maxwidth='592' minwidth='592' type-h='fixed' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='138' h='90000' id='4' is-fixed='true' param='vert' type='layout-flow' w='13800' x='60000' y='9000'>
+              <zone h='6500' id='9' mode='compact' param='[Parameters].[Parámetro 1]' type='paramctrl' w='13800' x='60000' y='9000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='8000' id='13' type='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontname='Tableau Light' fontsize='28'>                &lt;</run>
+              <run bold='true' fontcolor='#2a5783' fontname='Tableau Light' fontsize='28'>MESSI</run>
+              <run fontname='Tableau Light' fontsize='28'>Æ </run>
+              <run fontcolor='#898989' fontname='Tableau Light' fontsize='28'>VS</run>
+              <run bold='true' fontname='Tableau Light' fontsize='28'>Æ </run>
+              <run bold='true' fontcolor='#76b7b2' fontname='Tableau Light' fontsize='28'>RONALDO</run>
+              <run fontname='Tableau Light' fontsize='28'>&gt;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='32' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='8000' id='13' type='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontname='Tableau Light' fontsize='28'>                &lt;</run>
+                    <run bold='true' fontcolor='#2a5783' fontname='Tableau Light' fontsize='28'>MESSI</run>
+                    <run fontname='Tableau Light' fontsize='28'>Æ </run>
+                    <run fontcolor='#898989' fontname='Tableau Light' fontsize='28'>VS</run>
+                    <run bold='true' fontname='Tableau Light' fontsize='28'>Æ </run>
+                    <run bold='true' fontcolor='#76b7b2' fontname='Tableau Light' fontsize='28'>RONALDO</run>
+                    <run fontname='Tableau Light' fontsize='28'>&gt;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='1125' id='7' is-fixed='true' name='Champions League' show-title='false' w='59200' x='800' y='9000'>
+                  <layout-cache fixed-size-h='1' has-max-size-w='true' maxwidth='1' minwidth='1' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='9' mode='compact' param='[Parameters].[Parámetro 1]' type='paramctrl' w='13800' x='60000' y='9000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58750' id='11' is-fixed='true' name='La Liga' show-title='false' w='59200' x='800' y='10125'>
+                  <layout-cache has-max-size-w='true' maxwidth='592' minwidth='592' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6FE0723A-99DE-4001-9C9A-824C22992F99}' />
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='color' value='#666666' />
+          <format attr='font-size' value='12' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='color' value='#666666' />
+          <format attr='font-size' value='12' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='800' minheight='800' minwidth='800' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Parámetros' name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select competition' datatype='string' name='[Parámetro 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;La Liga&quot;'>
+          <calculation class='tableau' formula='&quot;La Liga&quot;' />
+          <members>
+            <member value='&quot;Champions League&quot;' />
+            <member value='&quot;La Liga&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='74750' id='7' param='horz' type='layout-flow' w='19125' x='79875' y='20250'>
+            <zone h='74750' id='6' param='vert' type='layout-flow' w='19125' x='79875' y='20250'>
+              <zone custom-title='true' h='7125' id='11' mode='compact' param='[Parameters].[Parámetro 1]' type='paramctrl' w='19125' x='79875' y='20250'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#898989' fontsize='11'>Select competition</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='24' h='4000' id='29' is-fixed='true' type='empty' w='19125' x='79875' y='27375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='125' h='16625' id='23' is-fixed='true' name='TotalLL' w='19125' x='79875' y='31375'>
+                <layout-cache fixed-size-w='131' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17500' id='24' name='TotalLL (2)' w='19125' x='79875' y='48000'>
+                <layout-cache fixed-size-h='132' fixed-size-w='145' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='6750' id='12' type='text' w='98000' x='1000' y='1000'>
+            <formatted-text>
+              <run fontalignment='1' fontname='Tableau Light' fontsize='36'>&lt;</run>
+              <run bold='true' fontalignment='1' fontcolor='#2a5783' fontname='Tableau Light' fontsize='36'>MESSI</run>
+              <run fontalignment='1' fontname='Tableau Light' fontsize='36'>Æ </run>
+              <run fontalignment='1' fontcolor='#898989' fontname='Tableau Light' fontsize='36'>VS</run>
+              <run bold='true' fontalignment='1' fontname='Tableau Light' fontsize='36'>Æ </run>
+              <run bold='true' fontalignment='1' fontcolor='#76b7b2' fontname='Tableau Light' fontsize='36'>RONALDO</run>
+              <run fontalignment='1' fontname='Tableau Light' fontsize='36'>&gt;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='74750' id='13' param='vert' type='layout-flow' w='78875' x='1000' y='20250'>
+            <zone fixed-size='538' h='68250' id='14' is-fixed='true' name='La Liga' show-title='false' w='78875' x='1000' y='20250'>
+              <layout-cache has-max-size-w='true' maxwidth='592' minwidth='592' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='1125' id='16' name='Champions League' show-title='false' w='78875' x='1000' y='88500'>
+              <layout-cache fixed-size-h='1' has-max-size-w='true' maxwidth='1' minwidth='1' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='8562' id='22' type='text' w='98000' x='1000' y='11688'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#666666' fontsize='11'>A minimalistic record graph showing some info of the two greatest football players of this generation through out seven years.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4000' id='26' type='text' w='98000' x='1000' y='95000'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#666666'>Source: transfermarkt.com I Design: Sergio Sampayo</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='3938' id='39' type='empty' w='98000' x='1000' y='7750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='47' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='46' param='vert' type='layout-flow' w='98000' x='1000' y='1000'>
+                <zone forceUpdate='true' h='6750' id='12' type='text' w='98000' x='1000' y='1000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Tableau Light' fontsize='36'>&lt;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#2a5783' fontname='Tableau Light' fontsize='36'>MESSI</run>
+                    <run fontalignment='1' fontname='Tableau Light' fontsize='36'>Æ </run>
+                    <run fontalignment='1' fontcolor='#898989' fontname='Tableau Light' fontsize='36'>VS</run>
+                    <run bold='true' fontalignment='1' fontname='Tableau Light' fontsize='36'>Æ </run>
+                    <run bold='true' fontalignment='1' fontcolor='#76b7b2' fontname='Tableau Light' fontsize='36'>RONALDO</run>
+                    <run fontalignment='1' fontname='Tableau Light' fontsize='36'>&gt;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8562' id='22' type='text' w='98000' x='1000' y='11688'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#666666' fontsize='11'>A minimalistic record graph showing some info of the two greatest football players of this generation through out seven years.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='68250' id='14' is-fixed='true' name='La Liga' show-title='false' w='78875' x='1000' y='20250'>
+                  <layout-cache has-max-size-w='true' maxwidth='592' minwidth='592' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='7125' id='11' mode='compact' param='[Parameters].[Parámetro 1]' type='paramctrl' w='19125' x='79875' y='20250'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#898989' fontsize='11'>Select competition</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='125' h='16625' id='23' is-fixed='true' name='TotalLL' w='19125' x='79875' y='31375'>
+                  <layout-cache fixed-size-w='131' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='17500' id='24' is-fixed='true' name='TotalLL (2)' w='19125' x='79875' y='48000'>
+                  <layout-cache fixed-size-w='145' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='1125' id='16' is-fixed='true' name='Champions League' show-title='false' w='78875' x='1000' y='88500'>
+                  <layout-cache fixed-size-h='1' has-max-size-w='true' maxwidth='1' minwidth='1' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4000' id='26' type='text' w='98000' x='1000' y='95000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#666666'>Source: transfermarkt.com I Design: Sergio Sampayo</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{37CBBF70-3D82-4064-8ED6-430E5DCB5235}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='La Liga'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='1' param='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[:Measure Names]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:CL_Goals:qk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4CDF1669-5EDF-4FF3-9A01-8AB6EF2E3250}' />
+    </window>
+    <window class='worksheet' name='TotalLL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1F54F008-CF04-48F4-B314-DC70F2CF0A25}' />
+    </window>
+    <window class='worksheet' name='TotalLL (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{68098B4F-6042-47C2-8944-A05CC6F0E21A}' />
+    </window>
+    <window class='worksheet' name='Champions League'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='3' param='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card mode='typeinlist' param='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[:Measure Names]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:CL_Goals:qk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Calculation_313281688901804032:nk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Season:nk]</field>
+            <field>[federated.1d8wrpp08annwb15f4r3a0wwuv30].[sum:Liga_Goals:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{45EF197D-D147-411E-A474-D4931376F9D3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Champions League' />
+        <viewpoint name='La Liga' />
+        <viewpoint name='TotalLL' />
+        <viewpoint name='TotalLL (2)'>
+          <highlight field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{52A4B101-67D1-4AAF-81EC-435131F9EB01}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Champions League' />
+        <viewpoint name='La Liga'>
+          <highlight field='[federated.1d8wrpp08annwb15f4r3a0wwuv30].[none:Player:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EC13E45A-F4AA-4A49-A000-3C0FB58F6069}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='La Liga' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='TotalLL' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADoElEQVR4nO3ZzYvWVRzG4fsZfBgeMlLRQR0ZewHDyGkipk1vQgtpIRFEEQT9AdG+f6id
+      exGiTUFGRRikhTBN2WhajiOjk0w4v3bRC0QROIv7upYHDpzv4sOBc0bDMAyBUlPbfQDYTgKg
+      mgCoJgCq7fjrwpmzF3Lx0rVMjUZ5+rHD+ejLpazfvpOTzx3LmbPnc/fuVt5960SmpkbZ2NzM
+      h8tL2fh1M88cfijLN1Zz9dZ6Th59POeuXM43P1/La8cWtmMu+Ff+dgMsHJnNxp3NzO7blaeO
+      zuXNlxYzPd6Rr5au5I0Tizmw94H8tHYrSTIZj7Pvvp0Zkuycns7ioblMxuMkyfz+A9k9mdzT
+      YeC/+lMAwzBkZvf9efvV5/P1dz9m+cpq3jv9ad55/XhefmE+739yIecurmQyPf59z5MHZ/PI
+      nr1ZuXnznh8e/q/RH/8BhmHIqQ++yNXV9czt35Nha8i3l69nMj3Oi4uP5vTH53NoZldeOf5E
+      kuT6xu189sOlbA1Dnn3w4Xy+cinXbq9nfv/BrN35Jd+v3ciRvTNZODC7bQPCPxn5CKOZVyCq
+      CYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYA
+      qgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgm
+      AKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCo
+      JgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoA
+      qCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCa
+      AKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKg
+      mgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoC
+      oJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBq
+      AqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmA
+      agKgmgCoJgCqCYBqvwGtP38qySV3lwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='TotalLL (2)' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADnklEQVR4nO3Zv2sfZQDH8c/322+SNiZafzStibZKEYNVRKzo1EEEJxdxEv8CNwf/Df8F
+      x44OTk51dGgrImjTRTFDmgiNJhbSNHoOTUEMCHZIlc/rtRzPHXfcM7yP5+5GwzAMgVLjB30D
+      8CAJgGoCoNrk7zuGYcgwJKPR3fEfw5Dx/mDYP/DX8ZBkdO/c/e0oyejeBeA/7EAAV1dW8+nn
+      X+WTj97N1Wur+XplNVu3dvLm+edz6cr13Nn7PR9/8Fampyb5YfNmvt+4kSR57anT+fbGWn78
+      5WbeWT6Xhbn5Q58M/FsHlkCvLp/Oy88tJUleOruUnd29LDw6n/nZmdze3cuR8Tjj8d2n+9r2
+      Vl5/+kxmp6dzbGoqF549m8X5R3LiobnDnQXcp398Bzg6M8mH713IxuZ2Ll9bzftvn89jD8/m
+      1992kiSvLC7lu431rG1tZTI+kpWfN7J8YsHyh/+NA0ugS1euZ3V9Mxe/uJzFJ45n5af1nHny
+      8bzx4jP57MtvMj87k+Nzx5Ik2zu3s7O3l3MnT+XoZJJbd3bzwslThz4JuF8jP8Jo5jMo1QRA
+      NQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUE
+      QDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDV
+      BEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA
+      1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQT
+      ANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBU
+      EwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0A
+      VBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBN
+      AFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQ
+      TQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUB
+      UE0AVBMA1QRAtT8Bb0lwhBMuhiUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
